@@ -22,4 +22,8 @@ SCENARIOS = [
         Elevator("A", 6, "up", 130, (8,)),
         Elevator("B", 4, "down", 520, (1,)),
     ), Request(5, "down")),
+        Scenario("S6 Idle car is much closer", (
+        Elevator("A", 8, "down", 130, (3,)),
+        Elevator("B", 2, "idle", 0),
+    ), Request(3, "down")),
 ]
